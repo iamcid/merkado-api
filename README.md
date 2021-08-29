@@ -1,24 +1,13 @@
-# README
+# Merkado
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Merkado is an online marketplace that allows you to sell or trade any of your products. 
 
-Things you may want to cover:
+## Version:
+- V 1.0
 
-* Ruby version
+## Instructions:
 
-* System dependencies
+## Link to backend:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License:
+Licensed under the [MIT License](LICENSE.md).
