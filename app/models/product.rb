@@ -1,4 +1,8 @@
 class Product < ApplicationRecord
     has_many :comments
-    validates :name, :category, :description, :image_url, :sell_or_trade, presence: true
+    validates :name, presence: true
+    validates :category, presence: true
+    validates :description, presence: true
+    validates :image_url, presence: true
+    validates :sell_or_trade, presence: true
 end
