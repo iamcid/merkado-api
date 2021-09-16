@@ -7,7 +7,7 @@ Merkado is an online marketplace that allows you to sell or trade any of your pr
 
 ## Instructions:
 
-## Link to backend:
+## Link to frontend:
 
 ## License:
 Licensed under the [MIT License](LICENSE.md).

@@ -2,8 +2,8 @@
 
 one:
   content: MyString
-  product_id: MyString
+  product: one
 
 two:
   content: MyString
-  product_id: MyString
+  product: two

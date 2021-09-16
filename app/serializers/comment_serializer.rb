@@ -1,4 +1,4 @@
 class CommentSerializer < ActiveModel::Serializer
-  attributes :id, :content, :product_id
-  belongs_to :product
+  attributes :id, :content
+  has_one :product
 end
