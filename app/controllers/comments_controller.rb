@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
 
   # GET /comments/1
   def show
-    render json: @comment
+    render json: @comment, status: 200
   end
 
   # POST /comments
@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
   # PATCH/PUT /comments/1
   def update
     if @comment.update(comment_params)
-      render json: @comment
+      render json: @comment, status: :ok, location: @comment
     else
       render json: @comment.errors, status: :unprocessable_entity
     end
@@ -46,6 +46,6 @@ class CommentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def comment_params
-      params.require(:comment).permit(:content, :product_id)
+      params.require(:comment).permit(:content)
     end
 end

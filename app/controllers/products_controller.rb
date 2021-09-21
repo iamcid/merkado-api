@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   def show
-    render json: @product
+    render json: @product, status: 200
   end
 
   # POST /products
@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   def update
     if @product.update(product_params)
-      render json: @product
+      render json: @product, status: :ok, location: @product
     else
       render json: @product.errors, status: :unprocessable_entity
     end
@@ -46,6 +46,6 @@ class ProductsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def product_params
-      params.require(:product).permit(:name, :category, :description, :image_url, :sell_or_trade)
+      params.require(:product).permit(:name, :category, :description, :image_url, :sell_or_trade, :id)
     end
 end
