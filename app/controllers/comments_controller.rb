@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
-    @comment = Comment.create(comment: params[:comment][:content], product_id: params[:product_id])
+    @comment = Comment.create(content: params[:comment][:content], product_id: params[:product_id])
 
     if @comment.save
       render json: @comment, status: :created
